@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我深爱的女王大人</title>
+	<script src="jquery.js"></script>
+ 	<script src="dist/sweetalert.min.js"></script> 
+	<link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+
+ 	<script>
+
+ 	$(function(){
+
+ 
+ 	  swal({ 
+				  title: "嗨 , 你好呀", 
+				  closeOnConfirm: false
+				},function(){
+				  swal({
+				  	title:"今天 是你生日",
+				  	closeOnConfirm:false
+				  },function(){
+				  	swal({
+				  		title:"可是...",
+				  		closeOnConfirm:false
+				  	},function(){
+				  		swal({
+				  		 	title:"",
+				  			text:"你爱的他在吗",
+				  			showCancelButton:"true",
+				  			confirmButtonText:"我很想他",
+				  			cancelButtonText:"不 :( 他不在",
+				  			closeOnCancel: false,
+				  			closeOnConfirm:false				
+
+				  		},function(isconfirm){
+				  			if (isconfirm) {
+				  				swal({
+				  					title:"喂！",
+				  					text:"你们昨天才分开好吗 ",
+				  					confirmButtonText:"我很想他",
+						  			cancelButtonText:" ",
+						  			closeOnCancel: false,
+						  			closeOnConfirm:false
+				  				},function(){
+				  					swal({
+				  						title:"我也想你( ˶ˇωˇ˶ ) ",
+				  						text:" ",
+							  			closeOnConfirm:false
+				  					},function(){
+				  						swal({
+				  							title:"亲爱的 ",
+				  							text:"时间过的很快",
+				  							closeOnConfirm:false
+
+				  						},function(){
+				  							swal({
+				  								title:"会过去的！",
+				  								text:"虽然我们只能每个周末见上一面...",
+				  								closeOnConfirm:false
+				  							},function(){
+				  								swal({
+				  									title:"",
+				  									text:"我想啊,",
+				  									closeOnConfirm:false
+				  								},function(){
+				  									swal({
+				  										title:"",
+				  										text:"以后每天每天都能牵着你的手抱着你",
+				  										closeOnConfirm:false,
+				  									},function(){
+				  										swal({
+				  											title:"走呀走呀... ",
+				  											text:"(っ´ω`)っ⊂(´ω`⊂ )",
+				  											closeOnConfirm:false
+				  										},function(){
+				  											swal({
+				  												title:"吃掉！",
+				  												text:" 然后拖进小树林ᕙ(･ω･‵‵)ᕗ ",
+				  												showCancelButton:"true",
+				  												confirmButtonText:"嘤嘤嘤",
+													  			cancelButtonText:"甩手走开",
+													  			closeOnCancel: false,
+													  			closeOnConfirm:false	
+				  											},function(isconfirm){
+
+
+				  												if (isconfirm) {
+				  													swal({
+				  													title:"百年好合",
+				  													text:"",
+				  													imageUrl:"dist/2.gif",
+				  													type:"input",
+				  													 showCancelButton: true, 
+																	  closeOnConfirm: false, 
+																	  animation: "slide-from-top", 
+																	  inputPlaceholder: "你个幼稚鬼",
+													  	 
+				  												},function(inputValue){
+				  													if (inputValue === false) return false; 				  
+																	if (inputValue !== "你个幼稚鬼") { 
+																	    swal.showInputError("那可真蠢");
+																	    return false 
+																	  } ;
+																	 swal({
+																	 	title:"",
+																	 	text:"你才是幼稚鬼",
+																	 	type:"error",
+																	 	confirmButtonText:"是是是 Orz",
+																	 	closeOnConfirm:false
+																	 },function(){
+																	 	swal({
+																	 		title:" ",
+																	 		text:" i am yours and you are mine",
+																	 		type:"input",
+																	 		 
+																		  closeOnConfirm: false, 
+																		  animation: "slide-from-top", 
+																		  inputPlaceholder: "小妖精，我是你的？ ",
+																	 	},function(inputValue){
+																	 		if (inputValue === false) return false; 				  
+																			if (inputValue !== "大魔王") { 
+																			    swal.showInputError("那可真蠢");
+																			    return false 
+																			 	};
+																			 	swal({
+																			 		title:"快跑吧～",
+																			 		text:"你的大魔王在楼下拎着小蛋糕等你"
+																			 	})
+
+
+																			 	})
+																	 })
+
+
+				  												})
+
+
+				  												}else{
+				  													swal({
+												  					title:"",
+												  					text:"雪 花飘飘..北风萧萧.  ",
+												  					timer:"5000",
+												  					imageUrl:"dist/1.jpg",
+												  					showConfirmButton:false
+												  				})
+				  												}
+				  												
+				  											})
+
+
+
+
+				  										})
+				  									})
+				  								})
+				  							})
+				  						})
+				  					})
+
+				  				})
+				  			}else{
+				  				swal({
+				  					title:"",
+				  					text:"雪 花飘飘..北风萧萧.  ",
+				  					timer:"5000",
+				  					imageUrl:"dist/1.jpg",
+				  					showConfirmButton:false
+				  				})	
+				  			}
+				  		})
+				  	})
+				  })
+
+
+
+				});
+
+  
+
+
+ 	})
+ 		
+
+ 	 	
+
+
+
+ 	</script>
+	<style>
+body,html{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding:0;
+
+	overflow:hidden;
+
+  
+}
+.bar1,.bar2,.bar3,.bar4{
+	width: 300%;
+	height: 50%;	
+	transform: rotate(-25deg);
+	overflow:hidden;
+}
+.bar1{
+	position: absolute;
+	top: -35%;
+	left: -45%;
+	background: #ee404e;
+}
+.bar2{
+	background: #f87670;
+	position: absolute;
+	top: -2%;
+	left: -45%;
+}
+.bar3{
+	position: absolute;
+	top: 26%;
+	left: -25%;
+	background: #ffd481;
+}
+.bar4{
+	position: absolute;
+	top: 65%;
+	left: -45%;
+	background: #afdaf0;
+}
+	 
+ 
+	</style>	
+	 
+</head>
+<body>
+	<!-- 	<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+		<div class="bar4"></div>	 -->
+	<!-- <div class="box">
+  
+	</div>  -->
+	
+
+</body>	
+</html>
+ 
