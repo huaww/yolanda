@@ -127,7 +127,8 @@ $(function(){
 																			 	swal({
 																			 		title:"快跑吧～",
 																			 		text:"你的大魔王在楼下拎着小蛋糕等你"
-																			 	})
+																			 	});
+																			 	$(".dog").css("display","block")
 
 
 																			 	})
@@ -199,7 +200,7 @@ body,html{
 
   
 }
-.bar1,.bar2,.bar3,.bar4{
+/*.bar1,.bar2,.bar3,.bar4{
 	width: 300%;
 	height: 50%;	
 	transform: rotate(-25deg);
@@ -228,6 +229,15 @@ body,html{
 	top: 65%;
 	left: -45%;
 	background: #afdaf0;
+}*/
+
+
+.dog{
+	display: none;
+ 
+	height: 100%;
+ 
+	background: url(dist/bg.gif)  ;
 }
 	 
  
@@ -242,6 +252,7 @@ body,html{
 	<!-- <div class="box">
   
 	</div>  -->
+	<div class="dog"></div>
 	
 
 </body>	
